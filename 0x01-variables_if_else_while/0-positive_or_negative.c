@@ -1,23 +1,22 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
+#include <time.h>
 /**
- * main - assigns a random number to int n everytime
- * it executes, and prints it
- * Return: Always 0 (Success)
+ *main - entry point
+ *Description: tell if a number is positive, zero or negative
+ *Return: Always return zero(0)
  */
 int main(void)
 {
-	int n;
-       	
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+int n;
+srand(time(0));
+n = rand() - RAND_MAX / 2;
 if (n > 0)
 	printf("%d is positive\n", n);
-else if (n == 0)
-	printf("%d is zero\n", n);
 else if (n < 0)
 	printf("%d is negative\n", n);
+else
+	printf("%d is zero\n", n);
+
 return (0);
 
-} 
+}
