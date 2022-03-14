@@ -2,10 +2,10 @@
 
 /**
 *main - use a printf function
-*return: return 0 (success)
+*Return: Always return 0 (success)
 */
 
-main(void)
+int main(void)
 {
 	printf("with proper grammar, but the outcome is a piece of art,");
 
