@@ -2,16 +2,20 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main-prints the alphabet in lowercase
- * putchar example: printing the alphabet*/
+ * main-program
+ * lowercase
+ *return 0
+ */
 int main(void)
 {
-	char c;
+	char a = 'a';
+	int n = 0;
 
-for (c = 'a' ; c <= 'z' ; c++)
-{
-	putchar (c);
-}
-
-return (0);
+	while (n < 26)
+	{
+		putchar(a);
+		a++;
+	}
+	putchar('\n');
+	return (0);
 }
