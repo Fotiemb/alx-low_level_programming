@@ -1,25 +1,15 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include "main.h"
 
-/**
- * main-print alphabet
- * Return: Always return 0 (success) 
+/*main - print alphabet function
+ * Return: Always return 0 (Success)
  */
-
-void print_alphabet(void);
-
-int main(void)
-{
-      
-		print_alphabet();
-        return 0;
-}
 
 void print_alphabet(void)
 {
-	 char ch;
-   for(ch = 'a' ; ch <= 'z' ; ch++)
-   {
-      putchar(ch);
-   }
+        char ch;
+        for(ch = 'a' ; ch <= 'z' ; ch++)
+        {
+                 putchar(ch);
+        }
 }
