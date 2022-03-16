@@ -6,15 +6,13 @@
  *
  * Return: Always return 0 (Success)
 */
+
 void print_alphabet(void)
 {
-	int letter;
+	char ch;
 
-	letter = 'a';
-
-	while (letter <= 'z')
+	for (ch = 'a' ; ch <= 'z' ; ch++)
 	{
-		fputchar(letter);
-		letter++;
+		putchar(ch);
 	}
 }

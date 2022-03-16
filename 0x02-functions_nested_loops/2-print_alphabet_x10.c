@@ -1,33 +1,25 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include "main.h"
 
 /**
- * main-print 10 times the alphabet
- * Return: Always return 0 (success) 
- */
-
-void print_alphabet_x10(void);
-
-int main(void)
-{
-      int n = 0;
-
-      while (n < 10)
-      {
-      	print_alphabet_x10();
-      	n++;
-      }
-		
-        return 0;
-}
+* main-print 10 times the alphabet
+* Return: Always return 0 (success)
+*/
 
 void print_alphabet_x10(void)
 {
-	 char ch;
-   for (ch = 'a' ; ch <= 'z' ; ch++)
-   {
-      putchar(ch);
-   }
+	int i = 0;
 
-   putchar('\n');
+	char ch;
+
+	while (i < 10)
+	{
+		for (ch = 'a' ; ch <= 'z' ; ch++)
+		{
+			putchar(ch);
+		}
+		putchar('\n');
+		i++;
+	}
 }
