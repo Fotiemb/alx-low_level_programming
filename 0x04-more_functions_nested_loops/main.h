@@ -2,7 +2,8 @@
 #define MAIN_H
 
 
-void positive_or_negative(void);
+int _isupper(int c);
+int mul(int a, int b);
 
 
 #endif
