@@ -1,21 +1,33 @@
 #include <stdio.h>
 #include "main.h"
 /**
+ *main - point of entry
  * _isupper -check if an argument if a uppercase letter
- * @c: variable check
+ *
  *
  * Return: either 1 for uppercase or 0 for any other character other than.
  */
-int _isupper(int c)
+int main(void)
 {
-	int ret;
-
-	if (c >= 'A' && c <= 'Z')
+	if (_isupper('A') == 1)
 	{
-		return (1);
+		_putchar('1');
 	}
 	else
 	{
-		return (0);
+		_putchar('0');
 	}
+	_putchar('\n');
+
+	if (_isupper('a') == 0)
+	{
+		_putchar('1');
+	}
+	else
+	{
+		_putchar('0');
+	}
+	_putchar('\n');
+
+	return (0);
 }
