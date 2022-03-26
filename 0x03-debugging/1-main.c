@@ -16,7 +16,7 @@ int main(void)
 	while (i < 10)
 	{
 		putchar(i);
-	}/*the stop condition has not been specified*/
+	} /*the stop condition has not been specified*/
 
 	printf("Infinite loop avoided! \\o/\n");
 
