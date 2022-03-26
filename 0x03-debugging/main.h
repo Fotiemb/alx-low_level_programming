@@ -2,7 +2,7 @@
 #define MAIN_H
 
 
-void positive_or_negative(void);
+void positive_or_negative(int i);
 
 
 #endif
