@@ -1,33 +1,22 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *main - point of entry
- * _isupper -check if an argument if a uppercase letter
- *
- *
- * Return: either 1 for uppercase or 0 for any other character other than.
- */
-int main(void)
+*_isupper - give here is my _isupper function
+* @c: a charactere
+*Return: either 1 for uppercase or 0 for any other character other than.
+*/
+
+int _isupper(int c)
 {
-	if (_isupper('A') == 1)
+	if (c >= 65 && c <= 90)
 	{
-		_putchar('1');
+		return (1);
 	}
 	else
 	{
-		_putchar('0');
+		if (c >= 97 && c <= 122)
+		{
+			return (0);
+		}
 	}
-	_putchar('\n');
-
-	if (_isupper('a') == 0)
-	{
-		_putchar('1');
 	}
-	else
-	{
-		_putchar('0');
-	}
-	_putchar('\n');
-
-	return (0);
-}
