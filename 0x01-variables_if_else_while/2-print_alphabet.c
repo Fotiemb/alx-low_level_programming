@@ -2,15 +2,15 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main-program
- * lowercase
- *return 0
+ *main-program
+ *lowercase
+ *Return: Always 0 (Success)
  */
 int main(void)
 {
 	char a = 'a';
 
-	while (a < 'z')
+	while (a <= 'z')
 	{
 		putchar(a);
 		a++;
