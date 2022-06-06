@@ -1,40 +1,39 @@
 #include <stdio.h>
+#include <unistd.h>
 
 /**
  * main - Entry point
  *
  * Return: Always 0 (Success/correct)
  */
- 
- int main(void)
+int main(void)
 {
-	int left;
-	int right;
-	int center;
-	
-	for (left = 48; left <= 57; left++)
+	int a;
+	int b;
+	int c;
+
+	a = '0';
+	b = '1';
+	c = '2';
+
+	while (a <= '9')
 	{
-		for (center = left + 1; center <= 57; center++)
+		while (b <= '9')
 		{
-			for (right = center + 1 ; right <= 57; right++)
+			while (c <= '9')
 			{
-				putchar(left);
-				putchar(center);
-				putchar(right);
-
-	  if  ((left == 55) && (center == left + 1) && (right == center + 1))
-	  {
-		  break;
-		  {
-			  putchar(',');
-			  putchar (' ');
-		  }
-	  }
-
-	
-}
-         putchar('\n');
-
-	 return (0);
-
+				putchar(a);
+				putchar(b);
+				putchar(c);
+				putchar(',');
+				putchar(' ');
+				c++;
+			}
+			b++;
+			c = b + 1;
+		}
+		a++;
+		b = a;
+	}
+	return (0);
 }
