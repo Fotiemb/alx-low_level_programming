@@ -16,9 +16,9 @@ int main(void)
 	b = '1';
 	c = '2';
 
-	while (a <= '9')
+	while (a < '9')
 	{
-		while (b <= '9')
+		while (b < '9')
 		{
 			while (c <= '9')
 			{
