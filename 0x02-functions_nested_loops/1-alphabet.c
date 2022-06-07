@@ -2,17 +2,20 @@
 #include "main.h"
 
 /**
- * main - check the code
+ *print_alphabet - check the code
  *
  * Return: Always return 0 (Success)
 */
 
 void print_alphabet(void)
 {
-	char ch;
+	char ch = 'a';
 
-	for (ch = 'a' ; ch <= 'z' ; ch++)
+	while (ch <= 'z')
 	{
-		putchar(ch);
+		putchar(a);
+		ch++;
 	}
+	putchar('\n';)
+	return (0);
 }
