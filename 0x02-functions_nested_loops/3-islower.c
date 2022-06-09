@@ -6,22 +6,10 @@
 
 /**
  * _islower - print 1 or 0
- * @c:parametre
+ * @c:the character to check
  * Return: Always return 0 (success)
  */
 int _islower(int c)
 {
-	char ch[26 + 1] = {'c', '\0'};
-
-	if (islower(ch[c]))
-	{
-		rint("la lettre est: %c\n", ch[c]);
-		return (1);
-	}
-	else
-	{
-		printf("0\n");
-		return (0);
-	}
-
+	return (c >= 'a' && c <= 'z');
 }
