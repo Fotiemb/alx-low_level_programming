@@ -7,22 +7,29 @@
 int main(void)
 
 {
-	int number_left;
-	int number_right;
+	int i, e;
+	i = 48;
+	e = 48;
 
-	for (number_left = 48; number_right <= 78; number_left++)
+	while (e < 58)
 	{
-		for (number_right = number_left + 1 ; number_right <= 78; number_right++)
+		i = 48;
+		while (i < 58)
 		{
-			putchar(number_left);
-			putchar (number_right);
-			if ((number_left == 56) && (number_right == 78))
+			if (e != i && e < i)
 			{
-				break;
+				putchar(e);
+				putchar(i);
+				if (i == 57 && e == 56)
+				{
+					break;
+				}
+				putchar(',');
+				putchar(' ');
 			}
-			putchar(',');
-			putchar (' ');
+			i++;
 		}
+		e++;
 	}
 	putchar('\n');
 	return (0);
