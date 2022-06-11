@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <unistd.h>
 
 /**
  * main - Entry point
@@ -8,32 +7,30 @@
  */
 int main(void)
 {
-	int a;
-	int b;
-	int c;
+	int n;
+	int m;
+	int l;
 
-	a = '0';
-	b = '1';
-	c = '2';
-
-	while (a < '9')
+	for (n = 48; n < 58; n++)
 	{
-		while (b < '9')
+		for (m = 49; m < 58; m++)
 		{
-			while (c <= '9')
+			for (l = 50; l < 58; l++)
 			{
-				putchar(a);
-				putchar(b);
-				putchar(c);
-				putchar(',');
-				putchar(' ');
-				c++;
+				if (l > m && m > n)
+				{
+					putchar(n);
+					putchar(m);
+					putchar(l);
+					if (n != 55 || m != 56)
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
 			}
-			b++;
-			c = b + 1;
 		}
-		a++;
-		b = a;
 	}
+	putchar('\n');
 	return (0);
 }
