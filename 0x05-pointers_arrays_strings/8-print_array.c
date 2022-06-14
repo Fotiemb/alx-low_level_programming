@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 /**
 *print_array - give element of table
@@ -12,7 +14,10 @@ void print_array(int *a, int n)
 	for (i = 0; i < n; ++i)
 	{
 		printf("%d", a[i]);
-		_putchar(',');
-		_putchar(' ');
+		if (i != (n - 1))
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
 }
