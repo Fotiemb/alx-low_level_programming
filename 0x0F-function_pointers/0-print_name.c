@@ -1,4 +1,3 @@
-able file 15 lines(14 sloc) 242 Bytes
 #include <stdio.h>
 #include "function_pointers.h"
 
